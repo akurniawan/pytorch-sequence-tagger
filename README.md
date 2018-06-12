@@ -1,4 +1,4 @@
-# python-sequence-tagger
+# pytorch-sequence-tagger
 This repo will try to build model that is used for sequence tagging (POS Tag, NER, etc.). The implementation is following the experiment of [1]. The model is a combination between embedding, LSTM and CRF. The architecture shown as the following
 
 ![alt text](./images/architecture.png "Architecture")
