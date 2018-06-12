@@ -12,7 +12,7 @@ The difference between the above architecture and the one that implemented on th
 
 ## How to Run?
 ### Data Preparation
-Within the same folder as this answer, please put the data inside `data/` folder. Your data must have "<dataset_name>.[dev|train|test].csv" format. For example conll.dev.csv. All three must exist before you run the training phase.
+Within the same folder as this answer, please put the data inside `data/` folder. Your data must have `<dataset_name>.[dev|train|test].csv` format. For example `conll.dev.csv`. All three must exist before you run the training phase.
 
 Below is the example of the data format
 ```
