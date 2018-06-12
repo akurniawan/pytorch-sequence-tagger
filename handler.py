@@ -13,6 +13,7 @@ def create_log_training_loss_handler(window=10):
             if current_iteration == 0:
                 current_iteration = iterations_per_epoch
             avg_loss = np.array(history).mean()
+            engine.state.metrics["loss"] = avg_loss
             print("Epoch[{}] Iteration[{}/{}] Loss: {:.2f}"
                   "".format(engine.state.epoch, current_iteration,
                             iterations_per_epoch, avg_loss))

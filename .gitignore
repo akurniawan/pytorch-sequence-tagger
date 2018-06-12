@@ -1,5 +1,6 @@
 # exclude data folder
 data/*
+.vector_cache/*
 
 # keep the data folder exist
 !data/.gitkeep

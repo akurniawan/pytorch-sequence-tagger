@@ -6,8 +6,8 @@ embedding:
   output_size: 30
   char_lstm_layers: 1
   char_lstm_dropout: 0.5
-  # pretrained: "glove.6B.300d"
-  pretrained: null
+  pretrained: "glove.6B.300d"
+  # pretrained: null
 tagger:
   hidden_size: 128
   layer_size: 2

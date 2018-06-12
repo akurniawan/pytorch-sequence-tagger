@@ -84,8 +84,7 @@ def run():
         require_empty=False)
 
     def score_fn(engine):
-        print(engine.state.metrics)
-        return engine.state.metrics["acc"]
+        return engine.state.metrics["loss"]
 
     early_stopper = EarlyStopping(
         trainer=trainer,
@@ -103,8 +102,9 @@ def run():
     trainer.add_event_handler(
         Events.EPOCH_COMPLETED,
         create_log_validation_handler(evaluator, val_iter))
-    # trainer.add_event_handler(Events.EPOCH_COMPLETED, early_stopper)
+    trainer.add_event_handler(Events.EPOCH_COMPLETED, early_stopper)
 
+    # Run the whole training process
     trainer.run(train_iter, max_epochs=ARGS.max_epochs)
 
 
