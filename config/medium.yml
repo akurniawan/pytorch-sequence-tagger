@@ -1,0 +1,14 @@
+embedding:
+  embedding_type: "lstm"
+  word_embedding_size: 300
+  char_embedding_size: 30
+  embedding_dropout: 0.5
+  output_size: 30
+  char_lstm_layers: 1
+  char_lstm_dropout: 0.5
+  # pretrained: "glove.6B.300d"
+  pretrained: null
+tagger:
+  hidden_size: 128
+  layer_size: 2
+  rnn_dropout: 0.5

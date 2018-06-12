@@ -1,0 +1,8 @@
+torch==0.4.0
+git+https://github.com/pytorch/ignite.git#egg=ignite
+torchtext
+numpy==1.14.3
+six==1.11.0
+pytorch-crf==0.5.1
+scikit-learn==0.19.1
+scipy==1.1.0
